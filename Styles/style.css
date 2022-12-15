@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #DFEBEB;
+    --text-color: #10131c;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+form {
+    background-color: white;
+}
+
+fieldset legend {
+    font-size: 2rem;
+    font-family: "Libre Baskerville", serif;
+}
