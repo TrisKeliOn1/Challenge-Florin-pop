@@ -12,6 +12,10 @@
     font-size: 62.5%;
 }
 
+a {
+    color: var(--text-color);
+}
+
 * body {
     font-family: 'Poppins', sans-serif;
 }
@@ -39,6 +43,8 @@ form {
 
     padding: 9rem;
     border-radius: 3.2rem;
+
+    box-shadow: 0 0 4.8rem rgb(0 0 0 / .1);
 }
 
 fieldset {
@@ -55,6 +61,36 @@ fieldset legend {
     background-color: var(--primary-100);
     border: 1px solid #BBC1C1;
     padding: 2.4rem;
+}
+
+.radio-wrapper > div {
+    display: flex;
+    gap: .8rem;
+}
+
+.radio-wrapper input[type="radio"] {
+    apparence: none;
+
+    border: 1px solid #BBC1C1;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+
+    background-color: white;
+}
+
+.radio-wrapper input[type="radio"]:checked {
+    background-image: radial-gradient(white 35%, black 40%);
+  }
+
+.radio-wrapper label {
+    font-size: 2rem;
+}
+
+.radio-wrapper p {
+    margin-top: 1rem;
+    padding-left: 3.8rem;
+    //add padding
 }
 
 legend + .radio-wrapper {
